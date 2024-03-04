@@ -1,0 +1,47 @@
+.popup {
+    position: relative;
+  }
+  
+  .popup input[type='checkbox'] {
+    display: none;
+  }
+  
+  .popup .burger {
+    cursor: pointer;
+  }
+  
+  .popup .popup-window {
+    display: none;
+    position: absolute;
+    top: 30px; /* Adjust as needed */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .popup input[type='checkbox']:checked + .burger + .popup-window,
+  .popup .burger:focus + .popup-window {
+    display: block;
+  }
+  
+  .popup .popup-window.open {
+    display: block;
+  }
+  
+  .popup ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .popup li {
+    margin-bottom: 10px;
+  }
+  
+  .popup hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
